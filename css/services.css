@@ -1,0 +1,317 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #121212;
+  --white: #FFFFFF;
+  --lightblue: #72FFFF;
+  --darkblue: #00D7FF;
+  --gold: #A48E22;
+  --violet: #5800FF;
+}
+
+.header .navbar {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1019607843);
+  transition: all 0.3s ease;
+}
+.header .navbar .content {
+  width: 100%;
+  margin: auto;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .navbar .logo img {
+  width: 4rem;
+}
+.header .navbar .menu-list {
+  display: inline-flex;
+  margin: 0;
+}
+.header .navbar .menu-list li {
+  list-style: none;
+}
+.header .navbar .menu-list a {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.header .navbar .menu-list a:hover {
+  color: var(--gold);
+}
+.header .navbar .menu-list .cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+.header .sticky {
+  background: var(--white);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1019607843);
+}
+.header .icon {
+  color: var(--white);
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 800px) {
+  .header body.disabled {
+    overflow: hidden;
+  }
+  .header .icon {
+    display: block;
+  }
+  .header .icon.hide {
+    display: none;
+  }
+  .header .navbar i {
+    color: var(--black);
+  }
+  .header .navbar .content {
+    padding: 0 25px;
+  }
+  .header .navbar .menu-list {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: var(--blue);
+    transition: all 0.3s ease;
+  }
+  .header .navbar .menu-list li {
+    margin-top: 45px;
+  }
+  .header .navbar .menu-list a {
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .header .navbar .menu-list i {
+    color: var(--black);
+  }
+  .header .navbar.show .menu-list {
+    left: 0%;
+    background: var(--gold);
+  }
+  .header .navbar.show .menu-list li a {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header nav img {
+    width: 8rem;
+  }
+  .header nav i {
+    display: block;
+    color: var(--white);
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .header .nav-links {
+    position: fixed;
+    background: var(--gold);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  .header .nav-links ul {
+    padding: 30px;
+  }
+  .header .nav-links li {
+    display: block;
+  }
+}
+.services {
+  margin: 3rem 20%;
+}
+.services .services-desc h1 {
+  font-size: 48px;
+  text-align: center;
+  color: var(--gold);
+  margin-bottom: 2rem;
+}
+.services .services-desc h2 {
+  font-size: 36px;
+  text-align: center;
+  color: var(--gold);
+}
+.services .services-desc p {
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+.services .services-desc a {
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  padding: 12px 34px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.services .services-desc a:hover {
+  background: var(--gold);
+  border: 0;
+  color: var(--white);
+}
+
+@media (max-width: 800px) {
+  .services {
+    margin: 3rem 1rem;
+  }
+  .services .services-desc h1 {
+    font-size: 36px;
+  }
+  .services .services-desc h2 {
+    font-size: 24px;
+  }
+  .services .services-desc p {
+    font-size: 18px;
+  }
+}
+.footer .footer-desc .footer-about {
+  height: 270px;
+  padding: 2rem 3rem;
+  background-color: var(--gold);
+  display: flex;
+  justify-content: space-around;
+}
+.footer .footer-desc .footer-about span {
+  color: var(--white);
+  width: 22rem;
+}
+.footer .footer-desc .footer-links h4 {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.footer .footer-desc .footer-links hr {
+  width: 3rem;
+}
+.footer .footer-desc .footer-links a {
+  text-decoration: none;
+  color: var(--white);
+  display: block;
+  line-height: 2rem;
+  transition: 0.5s ease;
+}
+.footer .footer-desc .footer-links a:hover {
+  color: var(--black);
+}
+.footer .footer-desc .footer-contact h4 {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.footer .footer-desc .footer-contact hr {
+  width: 3rem;
+}
+.footer .footer-desc .footer-contact p {
+  width: 20rem;
+  text-decoration: none;
+  color: var(--white);
+  display: block;
+  line-height: 2rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.footer .footer-desc .footer-contact p:hover {
+  color: var(--black);
+}
+.footer .footer-desc .footer-contact i {
+  color: var(--white);
+}
+.footer .footer-desc .foot {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--gold);
+  padding: 1rem 1rem;
+}
+.footer .footer-desc .foot p {
+  color: var(--white);
+}
+.footer .footer-desc .foot a {
+  color: var(--white);
+  font-weight: 800;
+  text-decoration: none;
+}
+.footer .footer-desc .foot .social a {
+  margin: 0 1rem;
+  color: var(--white);
+  transition: 0.5s ease;
+}
+.footer .footer-desc .foot .social a:hover {
+  color: var(--black);
+}
+
+@media (max-width: 768px) and (min-width: 501px) {
+  .footer .footer-desc .footer-about {
+    padding: 3rem 1rem;
+  }
+  .footer .footer-desc .footer-about span {
+    margin: 0 1rem;
+    font-size: 1rem;
+  }
+  .footer .footer-desc .footer-links {
+    margin: 0 2rem;
+  }
+  .footer .footer-desc .footer-links a {
+    font-size: 14px;
+  }
+  .footer .footer-desc .footer-contact p {
+    font-size: 14px;
+  }
+  .footer .foot p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .footer .footer-desc .footer-about {
+    height: auto;
+    display: block;
+    padding: 1rem 1rem;
+  }
+  .footer .footer-desc .footer-about span {
+    font-size: 18px;
+  }
+  .footer .footer-desc .footer-links {
+    margin: 2rem 0;
+  }
+  .footer .footer-desc .footer-links a {
+    font-size: 14px;
+  }
+  .footer .footer-desc .footer-contact p {
+    font-size: 14px;
+  }
+  .footer .footer-desc .foot {
+    display: block;
+    text-align: center;
+  }
+  .footer .footer-desc .foot p {
+    font-size: 14px;
+    margin-bottom: 2rem;
+  }
+}
