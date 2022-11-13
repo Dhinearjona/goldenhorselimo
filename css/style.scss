@@ -686,7 +686,7 @@
                 margin: 0 2rem;
 
                 a {
-                    font-size: 14px;
+                    font-size: 18px;
                 }
             }
 
@@ -701,7 +701,7 @@
         .foot {
 
             p {
-                font-size: 14px;
+                font-size: 18px;
             }
         }
     }
@@ -718,22 +718,32 @@
                 padding: 1rem 1rem;
 
                 span {
-                    font-size: 16px;
+                    font-size: 18px;
                 }
             }
 
             .footer-links {
                 margin: 2rem 0;
 
+                hr {
+                    margin-bottom: 1.5rem;
+                }
+
                 a {
-                    font-size: 14px;
+                    font-size: 18px;
+                    line-height: 2.5rem;
                 }
             }
 
             .footer-contact {
 
+                hr {
+                    margin-bottom: 1.5rem;
+                }
+
                 p {
-                    font-size: 14px;
+                    font-size: 18px;
+                    line-height: 2.5rem;
                 }
             }
 
@@ -742,7 +752,7 @@
                 text-align: center;
     
                 p {
-                    font-size: 14px;
+                    font-size: 18px;
                     margin-bottom: 2rem;
                 }
             }
