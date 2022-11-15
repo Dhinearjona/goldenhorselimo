@@ -260,12 +260,14 @@
     width: 100%;
   }
   .about .about-desc {
+    text-align: center;
     margin: 1.5rem 1rem;
   }
   .about .about-desc h1 {
     font-size: 30px;
   }
   .about .about-desc p {
+    text-align: center;
     font-size: 16px;
   }
   .about .about-desc a {
@@ -419,16 +421,17 @@
 }
 
 @media (max-width: 800px) {
-  .details .promise h1 {
+  .details .promise {
     text-align: center;
   }
   .details .promise p {
     font-size: 16px;
   }
-  .details .aboutus h1 {
+  .details .aboutus {
     text-align: center;
   }
   .details .aboutus p {
+    text-align: center;
     font-size: 16px;
   }
 }
@@ -531,6 +534,9 @@
   }
 }
 @media (max-width: 500px) {
+  .footer {
+    text-align: -webkit-center;
+  }
   .footer .footer-desc .footer-about {
     height: auto;
     display: block;

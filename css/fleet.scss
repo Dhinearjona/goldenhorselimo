@@ -224,6 +224,7 @@
         margin: 3rem 1rem;
 
         .fleet-desc {
+            text-align: -webkit-center;
 
             h1 {
                 font-size: 36px;
@@ -238,6 +239,7 @@
             }
 
             p {
+                text-align: center;
                 font-size: 18px;
                 margin-bottom: 2rem;
             }
@@ -395,6 +397,7 @@
     .footer {
 
         .footer-desc {
+            text-align: -webkit-center;
 
             .footer-about {
                 height: auto;

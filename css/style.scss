@@ -335,6 +335,7 @@
         }
 
         .about-desc {
+            text-align: center;
             margin: 1.5rem 1rem;
 
             h1 {
@@ -342,6 +343,7 @@
             }
             
             p {
+                text-align: center;
                 font-size: 16px;
             }
 
@@ -538,10 +540,7 @@
     .details {
 
         .promise {
-
-            h1 {
-                text-align: center;
-            }
+            text-align: center;
 
             p {
                 font-size: 16px;
@@ -549,12 +548,10 @@
         }
 
         .aboutus {
-
-            h1 {
-                text-align: center;
-            }
+            text-align: center;
 
             p {
+                text-align: center;
                 font-size: 16px;
             }
         }
@@ -709,6 +706,7 @@
 
 @media (max-width: 500px) {
     .footer {
+        text-align: -webkit-center;
 
         .footer-desc {
 

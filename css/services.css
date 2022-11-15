@@ -180,6 +180,9 @@
   .services {
     margin: 3rem 1rem;
   }
+  .services .services-desc {
+    text-align: center;
+  }
   .services .services-desc h1 {
     font-size: 36px;
   }
@@ -289,6 +292,9 @@
   }
 }
 @media (max-width: 500px) {
+  .footer .footer-desc {
+    text-align: -webkit-center;
+  }
   .footer .footer-desc .footer-about {
     height: auto;
     display: block;

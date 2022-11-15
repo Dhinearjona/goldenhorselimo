@@ -288,6 +288,9 @@
   }
 }
 @media (max-width: 500px) {
+  .footer .footer-desc {
+    text-align: -webkit-center;
+  }
   .footer .footer-desc .footer-about {
     height: auto;
     display: block;
