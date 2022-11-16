@@ -251,6 +251,8 @@ section {
 
 .cover {
     height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/img/cities.jpg);
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -261,11 +263,13 @@ section {
         h1 {
             font-size: 36px;
             margin-bottom: 1rem;
+            color: var(--white);
         }
 
         p {
             font-size: 18px;
             margin-bottom: 2rem;
+            color: var(--white);
         }
 
         a {
@@ -283,6 +287,14 @@ section {
             color: var(--white);
         }
     }
+
+    .cover-img {
+
+        img {
+            border-radius: 10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+    }
 }
 
 @media (max-width: 768px) and (min-width: 501px) {
@@ -290,9 +302,10 @@ section {
         display: block;
         height: 100%;
         text-align: center;
+        padding: 5rem 5%;
 
         .cover-desc {
-            margin: 5rem 0;
+            padding-bottom: 4rem;
 
             p {
                 margin-bottom: 4rem;
@@ -313,9 +326,10 @@ section {
         display: block;
         height: 100%;
         text-align: center;
+        padding: 5rem 5%;
 
         .cover-desc {
-            margin: 5rem 0;
+            padding: 5rem 0;
 
             h1 {
                 font-size: 24px;
@@ -355,11 +369,20 @@ section {
         h1 {
             color: var(--gold);
             font-size: 36px;
+            margin: 1rem 0;
         }
 
         p {
             font-size: 18px;
             margin-bottom: 3rem;
+        }
+    }
+
+    .expe-img {
+
+        img {
+            border-radius: 10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         }
     }
 }
@@ -373,7 +396,7 @@ section {
         .expe-desc {
 
             h1 {
-                margin: 1rem 0;
+                margin: 2rem 0;
             }
         }
 
@@ -396,7 +419,7 @@ section {
 
             h1 {
                 font-size: 24px;
-                margin: 1rem 0;
+                margin: 2rem 0;
             }
 
             p {
@@ -536,6 +559,7 @@ section {
         h1 {
             font-size: 36px;
             color: var(--gold);
+            margin: 1rem 0;
         }
 
         h2 {
@@ -552,6 +576,8 @@ section {
 
         img {
             width: 100%;
+            border-radius: 10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         }
     }
 }
@@ -620,6 +646,7 @@ section {
         h1 {
             font-size: 36px;
             color: var(--gold);
+            margin: 1rem 0;
         }
 
         h2 {
@@ -636,6 +663,8 @@ section {
 
         img {
             width: 35rem;
+            border-radius: 10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         }
     }
 }
