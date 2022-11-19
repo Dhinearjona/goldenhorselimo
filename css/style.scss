@@ -8,15 +8,17 @@
 :root {
     --black: #121212;
     --white: #FFFFFF;
-    --gold: #F8CE4D;
+    --red: #FF3333;
+    --brown: #996633;
+    --gold: #FFCC66;
     --lightgray: #F6F6F6;
     --gray: #778591;
     --darkgray: #616161;
 
-    --h1: clamp(1.5rem, -0.375rem + 6vw, 3rem);
-    --h2: clamp(1.5rem, 0.5625rem + 3vw, 2.25rem);
-    --p: clamp(0.75rem, 0.5938rem + 0.5vw, 0.875rem);
-    --a: clamp(0.75rem, 0.5938rem + 0.5vw, 0.875rem);
+    --h1: clamp(2.25rem, 1.3125rem + 3vw, 3rem);
+    --h2: clamp(0.875rem, -0.8438rem + 5.5vw, 2.25rem);
+    --p: clamp(0.875rem, 0.0938rem + 2.5vw, 1.5rem);
+    --a: clamp(0.875rem, 0.5625rem + 1vw, 1.125rem);
 }
 
 ::-webkit-scrollbar {
@@ -38,12 +40,6 @@ html {
     scroll-padding-top: 6rem;
 }
 
-section {
-    padding: 3rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .upper-head {
     padding: 0 5%;
     display: flex;
@@ -58,7 +54,7 @@ section {
             display: inline-flex;
             padding: 1rem 1rem;
             text-align: center;
-            font-size: var(--p);
+            font-size: var(--a);
             color: gray;
             margin: 0;
             align-items: center;
@@ -133,13 +129,13 @@ section {
 
     #menu-btn {
         display: none;
-        font-size: var(--p);
+        font-size: var(--a);
         color: var(--black);
         cursor: pointer;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) and (min-width: 501px) {
     .header {
 
         .flex {
@@ -161,7 +157,7 @@ section {
 
             a {
                 display: block;
-                margin: 2rem 2rem;
+                padding: 1rem 1rem;
             }
         }
 
@@ -180,6 +176,46 @@ section {
     }
 }
 
+@media (max-width: 500px) {
+    .header {
+
+        .flex {
+
+            img {
+                height: 5rem;
+            }
+        }
+
+        .navbar {
+            position: absolute;
+            display: none;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: var(--white);
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            transition: 0.5s ease;
+
+            a {
+                display: block;
+                padding: 1rem 1rem;
+            }
+        }
+
+        .navbar.active {
+            top: 100%;
+            display: block;
+        }
+
+        #menu-btn {
+            display: inline-block;
+        }
+
+        #menu-btn.fa-times {
+            transform: rotate(180deg);
+        }
+    }
+}
 .cover {
     height: 100vh;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/img/cities.jpg);
@@ -386,7 +422,7 @@ section {
 }
 
 .testimonials {
-    height: 70vh;
+    height: 80vh;
     align-items: center;
     justify-content: space-between;
 
@@ -417,12 +453,12 @@ section {
                     padding: 2rem 2rem;
 
                     p {
-                        font-size: var(--p);
+                        font-size: var(--a);
                         margin-bottom: 2rem;
                     }
 
                     span {
-                        font-size: var(--p);
+                        font-size: var(--a);
                         font-weight: 700;
                     }
                 }
@@ -633,7 +669,7 @@ section {
 
             p {
                 color: var(--darkgray);
-                font-size: var(--p);
+                font-size: var(--a);
             }
 
             a {
