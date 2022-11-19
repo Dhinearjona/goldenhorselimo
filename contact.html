@@ -4,53 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="img/logo.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="img/logo.ico">
     <link rel="stylesheet" href="css/contact.css">
-    <title>Contact Us - Agciotech IT Services</title>
+    <title>Contact Us - Golden Horse Limo</title>
 </head>
 <body>
-    <section class="header">
-        <nav class="navbar">
-            <div class="content">
-                <div class="logo">
-                    <a href="index.html"><img src="img/logo.png" /></a>
-                </div>
-                <ul class="menu-list">
-                    <div class="icon cancel-btn">
-                    <i class="fas fa-times"></i>
-                    </div>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="fleet.html">Fleet</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-                <div class="icon menu-btn">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
-        </nav>
-    </section>
-
-    <div class="contact">
-        <div class="contact-desc">
-            <img src="img/logo.png" />
-            <h1>Book Now Or Request A Quote!</h1>
-            <hr>
-            <p>We look forward to your experience with Golden Horse.
-            <br>Let us help you make the most of every moment. </p>
+    <div class="upper-head">
+        <div class="upper-details">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>2507 Parker Boulevard, Oakland, CA 76107</p>
+            <i class="fa-solid fa-phone"></i>
+            <p>(0481) 123 987 2411</p>
+            <i class="fa-solid fa-clock"></i>
+            <p>Mon-Sat: 07:00 - 17:00</p>
         </div>
-        <div class="contact-details">
-            <h1>Contact Us</h1>
-            <p>(704) 891 0213</p>
-            <p>704-923-5724</p>
-            <p>Goldenhorseride@gmail.com</p>
-            <p>Salem Kasaye, Co-Owner</p>
+        <div class="social-media">
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
         </div>
     </div>
 
-    <section class="footer">
+    <header class="header">
+        <section class="flex">
+            <a href="index.html" class="logo"><img src="img/logo.png" /></a>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="fleet.html">Fleet</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+    </header>
+
+    <section class="contact">
+        <div class="contact-title">
+            <h1>Contact Us</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <hr>
+        </div>
+        <div class="contact-side">
+            <div class="contact-form">
+                <form action="contact.php" method="POST" class="form">
+                    <h1>Get In Touch</h1>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe" tabindex="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="jane@doe.com" tabindex="2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Hello There!" tabindex="3" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Enter Message..." tabindex="4"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn" name="submit">Send Message!</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h1>Better yet, see us in person!</h1>
+                    <p>We love our customers, so feel free to visit during normal business hours.</p>
+                <h1>Golden Horse Limo</h1>
+                    <a href="#">2507 Parker Boulevard, Oakland, CA 76107</a>
+                    <br><a href="#">info@goldenhorselimo.com</a>
+                <h1>Opening Hours</h1>
+                    <p>Mon - Sat 10:00 am - 06:00 pm
+                    <br>Sunday - Closed</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.6623031048302!2d121.04975311475926!3d14.618303289791191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7c1206daa65%3A0x7f5f1bcea56da317!2s201%20General%20Mc%20Arthur%20Ave%2C%20Cubao%2C%20Quezon%20City%2C%201109%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1667825981668!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <div class="footer">
         <div class="footer-desc">
             <div class="footer-about">
                 <span>We are a family business with over 10 years in experience providing the best transportation service in the Charlotte area. We offer our clients a luxury ride like no other.</span>
@@ -60,13 +102,13 @@
                 <a href="index.html">Home</a>
                 <a href="services.html">Services</a>
                 <a href="fleet.html">Fleet</a>
-                <a href="connection.html">Contact Us</a>
+                <a href="contact.html">Contact Us</a>
             </div>
             <div class="footer-contact">
                 <h4>Contact Us</h4>
                 <hr>
                 <p>(704) 891 0213 // 704-923-5724</p>
-                <p>goldenhorseride@gmail.com</p>
+                <p>goldenhorselimo@gmail.com</p>
             </div>
         </div>
         <div class="foot">
@@ -79,7 +121,7 @@
             </div>
         </div>
     </div>
-</section>
+</div>
     
     <script src="js/main.js"></script>
 </body>

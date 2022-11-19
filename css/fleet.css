@@ -278,7 +278,7 @@ html {
 .footer .footer-desc .footer-about span {
   color: var(--darkgray);
   width: 25%;
-  font-size: var(--p);
+  font-size: var(--a);
 }
 .footer .footer-desc .footer-links h4 {
   color: var(--darkgray);
@@ -313,7 +313,7 @@ html {
   text-decoration: none;
   color: var(--darkgray);
   display: block;
-  font-size: var(--p);
+  font-size: var(--a);
   line-height: 2.5rem;
   cursor: pointer;
   transition: 0.5s ease;
