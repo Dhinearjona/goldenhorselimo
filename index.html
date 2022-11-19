@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="img/logo.ico">
     <link rel="stylesheet" href="css/style.css">
     <title>Home - Golden Horse Limo</title>
@@ -50,6 +51,36 @@
         </div>
         <div class="cover-img">
             <img src="img/limo2.jpg" />
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact-desc">
+            <p>Whether you're in need of an Charlotte airport car service, conference shuttles, a special event limousine, or to take visitors out for the evening, we have the perfect luxury vehicle and chauffeur for every possibility.</p>
+        </div>
+        <div class="contact-form">
+            <form action="contact.php" method="POST" class="form">
+                <h1>Get In Touch</h1>
+                <div class="form-group">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe" tabindex="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="jane@doe.com" tabindex="2" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Hello There!" tabindex="3" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Enter Message..." tabindex="4"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn" name="submit">Send Message!</button>
+                </div>
+            </form>
         </div>
     </div>
 
