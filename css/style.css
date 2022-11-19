@@ -13,10 +13,10 @@
   --lightgray: #F6F6F6;
   --gray: #778591;
   --darkgray: #616161;
-  --h1: clamp(2.25rem, 1.3125rem + 3vw, 3rem);
-  --h2: clamp(0.875rem, -0.8438rem + 5.5vw, 2.25rem);
-  --p: clamp(0.875rem, 0.0938rem + 2.5vw, 1.5rem);
-  --a: clamp(0.875rem, 0.5625rem + 1vw, 1.125rem);
+  --h1: clamp(1.5rem, -0.375rem + 6vw, 3rem);
+  --h2: clamp(1.5rem, 0.5625rem + 3vw, 2.25rem);
+  --p: clamp(0.75rem, 0.5938rem + 0.5vw, 0.875rem);
+  --a: clamp(0.75rem, 0.5938rem + 0.5vw, 0.875rem);
 }
 
 ::-webkit-scrollbar {
@@ -38,21 +38,6 @@ html {
   scroll-padding-top: 6rem;
 }
 
-@media (max-width: 1200px) and (min-width: 801px) {
-  html {
-    font-size: 70%;
-  }
-}
-@media (max-width: 800px) and (min-width: 501px) {
-  html {
-    font-size: 50%;
-  }
-}
-@media (max-width: 500px) {
-  html {
-    font-size: 30%;
-  }
-}
 section {
   padding: 3rem 2rem;
   max-width: 1200px;
@@ -71,7 +56,7 @@ section {
   display: inline-flex;
   padding: 1rem 1rem;
   text-align: center;
-  font-size: var(--a);
+  font-size: var(--p);
   color: gray;
   margin: 0;
   align-items: center;
@@ -88,18 +73,12 @@ section {
 
 @media (max-width: 800px) {
   .upper-head {
-    text-align: center;
+    padding: 0.5rem 0.5rem;
     display: block;
-    padding: 2rem 2rem;
-  }
-  .upper-head .upper-details {
-    margin-bottom: 1rem;
+    text-align: center;
   }
   .upper-head .upper-details p {
-    font-size: var(--p);
-  }
-  .upper-head .social-media a {
-    font-size: var(--p);
+    padding: 0.1rem 0.1rem;
   }
 }
 .header {
@@ -133,14 +112,14 @@ section {
 }
 .header #menu-btn {
   display: none;
-  font-size: var(--a);
+  font-size: var(--p);
   color: var(--black);
   cursor: pointer;
 }
 
 @media (max-width: 800px) {
   .header .flex img {
-    height: 10rem;
+    height: 5rem;
   }
   .header .navbar {
     position: absolute;
@@ -154,8 +133,7 @@ section {
   }
   .header .navbar a {
     display: block;
-    font-size: var(--p);
-    margin: 4rem 4rem;
+    margin: 2rem 2rem;
   }
   .header .navbar.active {
     top: 100%;
@@ -163,7 +141,6 @@ section {
   }
   .header #menu-btn {
     display: inline-block;
-    font-size: var(--h1);
   }
   .header #menu-btn.fa-times {
     transform: rotate(180deg);
@@ -212,20 +189,13 @@ section {
     display: block;
     height: 100%;
     text-align: center;
-    padding: 5rem 5%;
+    padding: 1rem 5%;
   }
   .cover .cover-desc {
-    margin-bottom: 7rem;
-  }
-  .cover .cover-desc h1 {
-    font-size: var(--h1);
+    margin-bottom: 3rem;
   }
   .cover .cover-desc p {
-    font-size: var(--p);
-    margin-bottom: 4rem;
-  }
-  .cover .cover-desc a {
-    font-size: var(--p);
+    margin-bottom: 2rem;
   }
   .cover .cover-img img {
     width: 100%;
@@ -235,7 +205,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3rem 5%;
+  padding: 2rem 5%;
 }
 .contact .contact-desc p {
   font-size: var(--p);
@@ -275,25 +245,15 @@ section {
   }
   .contact .contact-desc p {
     margin: 0;
-    font-size: var(--p);
     margin-bottom: 3rem;
     text-align: center;
   }
   .contact .contact-form {
     width: 100%;
   }
-  .contact .contact-form h1 {
-    font-size: var(--h1);
-  }
-  .contact .contact-form .form-label {
-    font-size: var(--p);
-  }
-  .contact .contact-form .btn {
-    font-size: var(--p);
-  }
 }
 .experience {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -306,15 +266,15 @@ section {
 }
 .experience .expe-desc h1 {
   color: var(--gold);
-  font-size: var(--h2);
+  font-size: var(--h1);
   font-weight: 800;
-  text-align: left;
+  text-align: center;
   margin: 1rem 0;
 }
 .experience .expe-desc p {
   font-size: var(--a);
   margin-bottom: 3rem;
-  text-align: left;
+  text-align: center;
 }
 .experience .expe-img img {
   border-radius: 10px;
@@ -325,16 +285,16 @@ section {
   .experience {
     display: block;
     height: 100%;
-    padding: 5rem 5%;
+    padding: 1rem 5%;
     text-align: center;
   }
+  .experience .expe-desc {
+    margin: 0;
+  }
   .experience .expe-desc h1 {
-    font-size: var(--h1);
-    margin: 2rem 0;
     text-align: center;
   }
   .experience .expe-desc p {
-    font-size: var(--p);
     text-align: center;
   }
   .experience .expe-img img {
@@ -342,7 +302,7 @@ section {
   }
 }
 .testimonials {
-  height: 100vh;
+  height: 70vh;
   align-items: center;
   justify-content: space-between;
 }
@@ -367,31 +327,41 @@ section {
   padding: 2rem 2rem;
 }
 .testimonials .testi-card .row .column .card p {
-  font-size: var(--a);
+  font-size: var(--p);
   margin-bottom: 2rem;
 }
 .testimonials .testi-card .row .column .card span {
-  font-size: var(--a);
+  font-size: var(--p);
   font-weight: 700;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 501px) {
   .testimonials {
-    padding: 5rem 5%;
+    padding: 2rem 5%;
     height: 100%;
   }
   .testimonials .testi-title h1 {
-    margin: 3rem 0;
-    font-size: var(--h1);
+    margin-bottom: 2rem;
   }
   .testimonials .testi-card .row .column .card {
     width: 100%;
   }
-  .testimonials .testi-card .row .column .card p {
-    font-size: var(--p);
+}
+@media (max-width: 500px) {
+  .testimonials {
+    padding: 2rem 5%;
+    height: 100%;
   }
-  .testimonials .testi-card .row .column .card span {
-    font-size: var(--p);
+  .testimonials .testi-title h1 {
+    margin-bottom: 1rem;
+  }
+  .testimonials .testi-card .row .column {
+    display: block;
+    padding: 0;
+  }
+  .testimonials .testi-card .row .column .card {
+    padding: 1rem 1rem;
+    margin: 1rem 0;
   }
 }
 .promises {
@@ -428,16 +398,14 @@ section {
   .promises {
     display: block;
   }
-  .promises .promises-desc h1 {
-    margin: 3rem 0;
-    font-size: var(--h1);
+  .promises .promises-desc {
+    margin: 0;
   }
-  .promises .promises-desc h2 {
-    font-size: var(--h2);
+  .promises .promises-desc h1 {
+    margin: 1rem 0;
   }
   .promises .promises-desc p {
-    margin: 3rem 0;
-    font-size: var(--p);
+    margin-bottom: 1.5rem;
   }
   .promises .promises-img img {
     width: 100%;
@@ -472,17 +440,16 @@ section {
 @media (max-width: 800px) {
   .about {
     display: block;
+    padding: 2rem 5%;
+  }
+  .about .about-desc {
+    margin: 0;
   }
   .about .about-desc h1 {
-    margin: 3rem 0;
-    font-size: var(--h1);
-  }
-  .about .about-desc h2 {
-    font-size: var(--h2);
+    margin: 1rem 0;
   }
   .about .about-desc p {
-    margin: 3rem 0;
-    font-size: var(--p);
+    margin: 1rem 0;
   }
   .about .about-img img {
     width: 100%;
@@ -497,8 +464,8 @@ section {
 }
 .footer .footer-desc .footer-about span {
   color: var(--darkgray);
-  width: 22rem;
-  font-size: var(--a);
+  width: 25%;
+  font-size: var(--p);
 }
 .footer .footer-desc .footer-links h4 {
   color: var(--darkgray);
@@ -530,11 +497,10 @@ section {
   width: 3rem;
 }
 .footer .footer-desc .footer-contact p {
-  width: 20rem;
   text-decoration: none;
   color: var(--darkgray);
   display: block;
-  font-size: var(--a);
+  font-size: var(--p);
   line-height: 2.5rem;
   cursor: pointer;
   transition: 0.5s ease;
@@ -553,11 +519,12 @@ section {
 }
 .footer .footer-desc .foot p {
   color: var(--darkgray);
-  font-size: var(--a);
+  font-size: var(--p);
 }
 .footer .footer-desc .foot a {
   color: var(--darkgray);
   font-weight: 800;
+  font-size: var(--a);
   text-decoration: none;
 }
 .footer .footer-desc .foot .social a {
@@ -574,69 +541,27 @@ section {
   .footer .footer-desc .footer-about {
     height: 100%;
   }
-  .footer .footer-desc .footer-about span {
-    font-size: var(--p);
+  .footer .footer-desc .footer-links {
+    margin-left: 2rem;
   }
-  .footer .footer-desc .footer-links h4 {
-    font-size: var(--h1);
-  }
-  .footer .footer-desc .footer-links a {
-    line-height: 5rem;
-    font-size: var(--p);
-  }
-  .footer .footer-desc .footer-contact h4 {
-    font-size: var(--h1);
-  }
-  .footer .footer-desc .footer-contact p {
-    font-size: var(--p);
-    line-height: 5rem;
-  }
-  .footer .footer-desc .foot p {
-    font-size: var(--p);
-  }
-  .footer .footer-desc .foot .social a {
-    font-size: var(--p);
+  .footer .footer-desc .footer-contact {
+    margin-left: 2rem;
   }
 }
 @media (max-width: 500px) {
   .footer .footer-desc .footer-about {
     display: block;
     height: 100%;
-    padding: 5rem 5%;
-  }
-  .footer .footer-desc .footer-about span {
-    font-size: 14px;
+    padding: 2rem 5%;
   }
   .footer .footer-desc .footer-links {
-    margin: 5rem 0;
-  }
-  .footer .footer-desc .footer-links h4 {
-    font-size: 24px;
-  }
-  .footer .footer-desc .footer-links a {
-    font-size: 14px;
-    line-height: 6rem;
+    margin: 2rem 0;
   }
   .footer .footer-desc .footer-contact {
-    margin: 5rem 0;
-  }
-  .footer .footer-desc .footer-contact h4 {
-    font-size: 24px;
-  }
-  .footer .footer-desc .footer-contact p {
-    width: 100%;
-    font-size: 14px;
-    line-height: 6rem;
+    margin: 2rem 0;
   }
   .footer .footer-desc .foot {
     display: block;
     text-align: center;
-  }
-  .footer .footer-desc .foot p {
-    font-size: 14px;
-    margin-bottom: 3rem;
-  }
-  .footer .footer-desc .foot .social a {
-    font-size: 18px;
   }
 }
