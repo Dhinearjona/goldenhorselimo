@@ -358,10 +358,11 @@ html {
 }
 
 .experience {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--lightgray);
     padding: 0 5%;
 
     .expe-desc {
@@ -529,6 +530,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--lightgray);
     padding: 3rem 5%;
 
     .about-desc {
@@ -579,6 +581,109 @@ html {
 
             img {
                 width: 100%;
+            }
+        }
+    }
+}
+
+.services {
+    padding: 3rem 5%;
+
+    .services-title {
+        text-align: center;
+
+        h1 {
+            font-size: var(--h1);
+            font-weight: 800;
+            color: var(--gold);
+            margin-bottom: 2rem;
+        }
+    }
+
+    .services-card {
+        padding: 0 5%;
+        text-align: center;
+
+        .row {
+
+            .column {
+                display: flex;
+                justify-content: center;
+
+
+                .card {
+                    width: 20rem;
+                    padding: 1rem 1rem;
+                    margin: 0 1rem;
+                    text-align: center;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    h3 {
+                        font-size: var(--h3);
+                        margin: 1rem 0;
+                        font-weight: 700;
+                    }
+
+                    a {
+                        font-size: var(--a);
+                        background-color: var(--gold);
+                        padding: 12px 34px;
+                        border-radius: 10px;
+                        text-decoration: none;
+                        color: var(--black);
+                        transition: 0.5s ease;
+                    }
+            
+                    a:hover {
+                        background-color: var(--black);
+                        color: var(--white);
+                    }
+                }
+            }
+
+            .btnLearn {
+                margin: 2rem 0;
+
+                a {
+                    font-size: var(--a);
+                    background-color: var(--gold);
+                    padding: 12px 34px;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    color: var(--black);
+                    transition: 0.5s ease;
+                }
+        
+                a:hover {
+                    background-color: var(--black);
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .services {
+        height: 100%;
+        padding: 0;
+
+        .services-card {
+
+            .row {
+                justify-content: center;
+                align-items: center;
+
+                .column {
+                    display: contents;
+
+                    .card {
+                        margin: 1rem 1rem;
+                    }
+                }
             }
         }
     }
