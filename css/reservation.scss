@@ -218,99 +218,62 @@ html {
     }
 }
 
-.services {
+.reserve {
     padding: 3rem 5%;
 
-    .services-title {
+    .reserve-title {
+        text-align: center;
 
         h1 {
-            text-align: center;
             font-size: var(--h1);
-            font-weight: 800;
             text-transform: uppercase;
+            font-weight: 800;
             color: var(--gold);
+        }
+    }
+    
+    .reserve-desc {
+        padding: 1rem 10%;
+
+        h2 {
+            font-size: var(--h2);
+            text-transform: uppercase;
+            font-weight: 800;
         }
 
         p {
             font-size: var(--p);
-            text-align: center;
         }
     }
 
-    .services-card {
+    .reserve-payment {
+        padding: 0 10%;
 
-        .row {
-            justify-content: center;
+        form {
 
-            .column {
-                display: contents;
-                align-items: center;
-
-                .card {
-                    width: 25rem;
-                    height: fit-content;
-                    padding: 1rem 1rem;
-                    margin: 1rem 1rem;
-                    text-align: center;
-
-                    img {
-                        width: 20rem;
-                        align-self: center;
-                    }
-
-                    h2 {
-                        text-align: center;
-                        font-size: var(--h2);
-                        font-weight: 800;
-                        text-transform: uppercase;
-                    }
-
-                    p {
-                        font-size: var(--p);
-                    }
-
-                    a {
-                        padding: 12px 34px;
-                        border-radius: 5px;
-                        background-color: var(--gold);
-                        color: var(--black);
-                        font-size: var(--a);
-                        text-align: center;
-                        margin: 1rem 0;
-                        text-decoration: none;
-                        transition: 0.5s ease;
-                    }
-            
-                    a:hover {
-                        background-color: var(--black);
-                        color: var(--white);
-                    }
-                }
+            h1 {
+                font-size: var(--h1);
+                font-weight: 800;
+                text-transform: uppercase;
             }
+        }
+
+        button {
+            background-color: var(--gold);
+            margin: 2rem 0;
         }
     }
 }
 
-@media (max-width: 800px) {
-    .fleet {
+@media (max-width: 500px) {
+    .reserve {
 
-        .fleet-services {
+        .reserve-desc {
+            padding: 1rem 0;
+        }
 
-            .row {
-                justify-content: center;
-
-                .column {
-                    display: contents;
-
-                    .card {
-                        width: 20rem;
-
-                        img {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
+        .reserve-payment {
+            padding: 1rem 0;
         }
     }
 }
