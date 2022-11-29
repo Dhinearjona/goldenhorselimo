@@ -2,6 +2,8 @@
 @import "footer.css";
 
 .reserve {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/img/cover.jpg);
+    background-size: cover;
 
     .reserve-title {
         padding: 5rem 8%;
@@ -36,18 +38,20 @@
 
                     h1 {
                         font-size: var(--h2);
+                        color: var(--gold);
                         text-transform: uppercase;
                         font-weight: 700;
                     }
 
                     p {
                         font-size: var(--p);
+                        color: var(--white);
                     }
 
                     a {
                         font-size: var(--a);
                         background-color: var(--gold);
-                        color: var(--white);
+                        color: var(--black);
                         border-radius: 10px;
                         text-transform: uppercase;
                         text-decoration: none;
@@ -71,6 +75,7 @@
 
             h1 {
                 font-size: var(--h1);
+                color: var(--gold);
                 font-weight: 800;
                 text-transform: uppercase;
             }

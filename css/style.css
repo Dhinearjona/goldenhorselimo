@@ -105,7 +105,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--lightgray);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/img/cover.jpg);
+  background-size: cover;
 }
 .experience .expe-desc {
   text-align: center;
@@ -122,6 +123,7 @@
 .experience .expe-desc p {
   font-size: var(--p);
   margin-bottom: 3rem;
+  color: var(--white);
   text-align: center;
 }
 .experience .expe-img img {
@@ -218,7 +220,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--lightgray);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/img/cover.jpg);
+  background-size: cover;
   padding: 10rem 8%;
 }
 .about .about-desc {
@@ -234,6 +237,7 @@
 }
 .about .about-desc p {
   font-size: var(--p);
+  color: var(--white);
 }
 .about .about-img img {
   width: 35rem;
