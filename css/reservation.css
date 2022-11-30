@@ -58,6 +58,9 @@
 .reserve .reserve-payment {
   padding: 3rem 10%;
 }
+.reserve .reserve-payment form .form-label {
+  color: var(--white);
+}
 .reserve .reserve-payment form h1 {
   font-size: var(--h1);
   color: var(--gold);
@@ -76,11 +79,31 @@
   background-color: var(--black);
 }
 
+@media (max-width: 800px) and (min-width: 501px) {
+  .reserve .reserve-desc {
+    padding: 0 1rem;
+  }
+}
 @media (max-width: 500px) {
   .reserve .reserve-desc {
     padding: 1rem 0;
   }
+  .reserve .reserve-desc .row {
+    display: contents;
+  }
+  .reserve .reserve-desc .row .column {
+    display: contents;
+  }
+  .reserve .reserve-desc .row .column .card {
+    width: 100%;
+    height: 100%;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+  }
   .reserve .reserve-payment {
-    padding: 1rem 0;
+    padding: 1rem 2rem;
+  }
+  .reserve .reserve-payment h1 {
+    text-align: center;
   }
 }
