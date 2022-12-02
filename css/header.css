@@ -6,7 +6,7 @@
 }
 
 :root {
-  --black: #121212;
+  --black: #000000;
   --white: #FFFFFF;
   --red: #FF3333;
   --brown: #996633;
@@ -40,43 +40,6 @@ html {
   scroll-padding-top: 6rem;
 }
 
-.upper-head {
-  padding: 0 5%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--lightgray);
-}
-.upper-head .upper-details i,
-.upper-head .upper-details p {
-  display: inline-flex;
-  padding: 1rem 1rem;
-  text-align: center;
-  font-size: var(--p);
-  color: gray;
-  margin: 0;
-  align-items: center;
-}
-.upper-head .social-media a {
-  padding: 0 1rem;
-  font-size: var(--a);
-  text-decoration: none;
-  color: var(--gray);
-}
-.upper-head .social-media a:hover {
-  color: var(--darkgray);
-}
-
-@media (max-width: 800px) {
-  .upper-head {
-    padding: 0.5rem 0.5rem;
-    display: block;
-    text-align: center;
-  }
-  .upper-head .upper-details p {
-    padding: 0.1rem 0.1rem;
-  }
-}
 .header {
   position: sticky;
   top: 0;
@@ -98,6 +61,7 @@ html {
 .header .navbar a {
   margin-left: 2rem;
   font-size: var(--a);
+  text-transform: uppercase;
   color: var(--white);
   text-decoration: none;
   transition: 0.5s ease;

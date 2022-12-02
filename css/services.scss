@@ -23,30 +23,35 @@
             align-items: center;
 
             .column {
-                display: contents;
-                align-items: center;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: center;
 
                 .card {
+                    display: block;
                     width: 25rem;
-                    height: 35rem;
-                    padding: 1rem 1rem;
-                    margin: 1rem 1rem;
+                    height: max-content;
+                    padding: 2rem 2rem;
+                    margin: .5rem .5rem;
                     text-align: center;
 
                     img {
                         width: 20rem;
-                        height: fit-content;
+                        height: 10rem;
                         align-self: center;
                     }
 
                     h2 {
                         text-align: center;
-                        margin: 2rem 0;
+                        margin-top: 2rem;
                         font-size: 16px;
                         font-weight: 800;
                     }
 
                     p {
+                        margin-top: 1rem;
                         font-size: 14px;
                     }
 

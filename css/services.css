@@ -16,28 +16,33 @@
   align-items: center;
 }
 .services .services-card .row .column {
-  display: contents;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 .services .services-card .row .column .card {
+  display: block;
   width: 25rem;
-  height: 35rem;
-  padding: 1rem 1rem;
-  margin: 1rem 1rem;
+  height: max-content;
+  padding: 2rem 2rem;
+  margin: 0.5rem 0.5rem;
   text-align: center;
 }
 .services .services-card .row .column .card img {
   width: 20rem;
-  height: fit-content;
+  height: 10rem;
   align-self: center;
 }
 .services .services-card .row .column .card h2 {
   text-align: center;
-  margin: 2rem 0;
+  margin-top: 2rem;
   font-size: 16px;
   font-weight: 800;
 }
 .services .services-card .row .column .card p {
+  margin-top: 1rem;
   font-size: 14px;
 }
 .services .services-card .row .column .card a {
