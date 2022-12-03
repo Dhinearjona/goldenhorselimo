@@ -30,6 +30,7 @@
                 justify-content: center;
 
                 .card {
+                    background-color: var(--black);
                     display: block;
                     width: 25rem;
                     height: max-content;
@@ -45,6 +46,7 @@
 
                     h2 {
                         text-align: center;
+                        color: var(--white);
                         margin-top: 2rem;
                         font-size: 16px;
                         font-weight: 800;
@@ -52,6 +54,7 @@
 
                     p {
                         margin-top: 1rem;
+                        color: var(--white);
                         font-size: 14px;
                     }
 
@@ -59,7 +62,7 @@
                         padding: 12px 34px;
                         border-radius: 5px;
                         background-color: var(--gold);
-                        color: var(--black);
+                        color: var(--white);
                         font-size: var(--a);
                         text-align: center;
                         margin: 1rem 0;

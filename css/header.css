@@ -76,7 +76,7 @@ html {
 .header #menu-btn {
   display: none;
   font-size: var(--a);
-  color: var(--black);
+  color: var(--white);
   cursor: pointer;
 }
 
@@ -90,7 +90,7 @@ html {
     top: 100%;
     left: 0;
     right: 0;
-    background-color: var(--white);
+    background-color: var(--black);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     transition: 0.5s ease;
   }

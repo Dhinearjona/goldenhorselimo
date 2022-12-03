@@ -6,21 +6,13 @@ menu.onclick = () => {
     navbar.classList.toggle('active');
 }
 
-
 var swiper = new Swiper(".mySwiper", {});
 
 $(function() {
-    
     $(".form-control").on('focus', function(){
-
         $(this).parents(".form-group").addClass('focused');
-
     });
-
     $(".form-control").on('blur', function(){
-
         $(this).parents(".form-group").removeClass('focused');
-
     });
-
 });
