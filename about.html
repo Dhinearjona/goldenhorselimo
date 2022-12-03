@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="icon" href="img/logo.ico">
-    <link rel="stylesheet" href="css/contact.css">
-    <title>Contact Us - Golden Horse Limo</title>
+    <link rel="stylesheet" href="css/about.css">
+    <title>About Us - Golden Horse Limo</title>
 </head>
 <body>
     <header class="header">
@@ -28,48 +29,29 @@
         </section>
     </header>
 
-    <section class="contact">
-        <div class="contact-title">
-            <h1>Contact Us</h1>
-        </div>
-        <div class="contact-side">
-            <div class="contact-form">
-                <form action="contact.php" method="POST" class="form">
-                    <h1>Get In Touch</h1>
-                    <div class="form-group">
-                        <label for="name" class="form-label">Your Name</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe" tabindex="1" required>
+    <div class="testimonials">
+        <div class="testi-desc">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h3>“I have been a customer of Golden Horse for 6 years. They consistently provide reliable, professional transportation service from/to the airport and within the Charlotte area. What I appreciate most is their attention to service and the long-term relationships they build with their customers. Truly, one of the best transportation services I have ever used!”</h3>
+                        <p>- Barbara Porter -</p>
                     </div>
-                    <div class="form-group">
-                        <label for="email" class="form-label">Your Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="jane@doe.com" tabindex="2" required>
+                    <div class="swiper-slide">
+                        <h3>“I do a fair amount of traveling for work and it's always tough to find a reliable car service, but Golden Horse was a great experience. Whenever my business takes me to Charlotte, I call them first. ”</h3>
+                        <p>- Mitch F -</p>
                     </div>
-                    <div class="form-group">
-                        <label for="subject" class="form-label">Subject</label>
-                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Hello There!" tabindex="3" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Enter Message..." tabindex="4"></textarea>
-                    </div>
-                    <div>
-                        <button type="submit" class="btn" name="submit">Send Message!</button>
-                    </div>
-                </form>
-            </div>
-
-            <div class="contact-info">
-                <h1>Golden Horse Limo</h1>
-                    <a href="#">2507 Parker Boulevard, Oakland, CA 76107</a>
-                    <br><a href="#">info@goldenhorselimo.com</a><br>
-                    <a href="#">(704) 891- 0213 | (980) 748-5997</a>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.145143055829!2d-122.17533328485305!3d37.76319477976153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f8f57b8bd6dd9%3A0x408f20ad12f0a4af!2s2507%20Parker%20Ave%2C%20Oakland%2C%20CA%2094605%2C%20USA!5e0!3m2!1sen!2sph!4v1669252326674!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+    <div class="about">
+        <div class="about-desc">
+            <h1>About Us</h1>
+            <p>We are a family business with over 10 years in experience providing the best transportation service in the Charlotte area. We offer our clients a luxury ride like no other. Our drivers can only hit the road after passing a background and drug test because ensuring our client's safety is our top priority. Our fleet has a variety of vehicles, so we know we can accommodate your needs! Our clients know that with our drivers behind the wheel, they can sit back and enjoy the moments that matter. </p>
+        </div>
+    </div>
 
     <div class="footer">
         <div class="footer-desc">
@@ -102,7 +84,8 @@
         </div>
     </div>
 </div>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
