@@ -7,6 +7,11 @@
   width: 25rem;
 }
 
+@media (max-width: 800px) {
+  .logos img {
+    width: 100%;
+  }
+}
 .container .swiper {
   width: 100%;
   height: 100%;
