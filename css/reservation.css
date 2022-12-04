@@ -61,6 +61,10 @@
 .reserve .reserve-payment form .form-label {
   color: var(--white);
 }
+.reserve .reserve-payment form label {
+  color: var(--white);
+  margin: 1rem 0;
+}
 .reserve .reserve-payment form h1 {
   font-size: var(--h1);
   color: var(--gold);

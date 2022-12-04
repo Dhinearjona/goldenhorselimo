@@ -78,10 +78,16 @@
                         <label for="pickup" class="form-label">Drop-Off-Location</label>
                         <input type="geolocation" class="form-control" id="form-control" name="location" required>
                     </div>
-                    <div class="form-group">
-                        <label for="number" class="form-label">Number of Passenger:</label>
-                        <input type="number" class="form-control" id="form-control" name="number" required>
-                    </div>
+                    <label for="number">Number of Passengers:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Number of Passengers:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
                     <div class="form-group">
                         <label for="number" class="form-label">Luggage Count:</label>
                         <input type="number" class="form-control" id="form-control" name="number" required>

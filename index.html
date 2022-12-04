@@ -81,49 +81,56 @@
         <div class="contact-form">
             <form action="contact.php" method="POST" class="form">
                 <h1>New Reservation</p>
-                <h2>Step 1: Ride Info</h2>
-                <label for="services">Select Service Type</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>From Airport</option>
-                    <option value="1">To Airport</option>
-                    <option value="2">Point-To-Point</option>
-                    <option value="3">Hourly/As Directed</option>
-                </select>
-                <div class="form-group">
-                    <label for="date" class="form-label">Pick-Up-Date</label>
-                    <input type="date" class="form-control" id="form-control" name="date" required>
-                </div>
-                <div class="form-group">
-                    <label for="time" class="form-label">Pick-Up-Time</label>
-                    <input type="time" class="form-control" id="form-control" name="time" required>
-                </div>
-                <div class="form-group">
-                    <label for="pickup" class="form-label">Pick-Up-Airport</label>
-                    <input type="geolocation" class="form-control" id="form-control" name="location" required>
-                </div>
-                <div class="form-group">
-                    <label for="pickup" class="form-label">Drop-Off-Location</label>
-                    <input type="geolocation" class="form-control" id="form-control" name="location" required>
-                </div>
-                <div class="form-group">
-                    <label for="number" class="form-label">Number of Passenger:</label>
-                    <input type="number" class="form-control" id="form-control" name="number" required>
-                </div>
-                <div class="form-group">
-                    <label for="number" class="form-label">Luggage Count:</label>
-                    <input type="number" class="form-control" id="form-control" name="number" required>
-                </div><br><br>
-                <h2>Step 2: Select Vehicle</h2>
-                <label for="services">Sort by Price:</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Sort by Price</option>
-                    <option value="1">Low-High</option>
-                    <option value="2">High-Low</option>
-                </select><br><br>
-                <div>
-                    <button type="submit" class="btn" name="submit">Send Message!</button>
-                </div>
-            </form>
+                    <h2>Step 1: Ride Info</h2>
+                    <label for="services">Select Service Type</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>From Airport</option>
+                        <option value="1">To Airport</option>
+                        <option value="2">Point-To-Point</option>
+                        <option value="3">Hourly/As Directed</option>
+                    </select>
+                    <div class="form-group">
+                        <label for="date" class="form-label">Pick-Up-Date</label>
+                        <input type="date" class="form-control" id="form-control" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time" class="form-label">Pick-Up-Time</label>
+                        <input type="time" class="form-control" id="form-control" name="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pickup" class="form-label">Pick-Up-Airport</label>
+                        <input type="geolocation" class="form-control" id="form-control" name="location" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pickup" class="form-label">Drop-Off-Location</label>
+                        <input type="geolocation" class="form-control" id="form-control" name="location" required>
+                    </div>
+                    <label for="number">Number of Passengers:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Number of Passengers:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <div class="form-group">
+                        <label for="number" class="form-label">Luggage Count:</label>
+                        <input type="number" class="form-control" id="form-control" name="number" required>
+                    </div><br><br>
+                    <h2>Step 2: Select Vehicle</h2>
+                    <label for="services">Sort by Price:</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Sort by Price</option>
+                        <option value="1">Low-High</option>
+                        <option value="2">High-Low</option>
+                    </select><br><br>
+                    <div>
+                        <button type="submit" class="btn" name="submit">Send Message!</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
