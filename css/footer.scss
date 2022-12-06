@@ -5,12 +5,11 @@
         .footer-about {
             height: 270px;
             padding: 2rem 3rem;
-            background-color: var(--lightgray);
             display: flex;
             justify-content: space-around;
     
             span {
-                color: var(--darkgray);
+                color: var(--white);
                 width: 25%;
                 font-size: var(--p);
             }
@@ -19,7 +18,7 @@
         .footer-links {
     
             h4 {
-                color: var(--darkgray);
+                color: var(--white);
                 font-weight: 800;
                 font-size: var(--h2);
                 text-transform: uppercase;
@@ -31,7 +30,7 @@
     
             a {
                 text-decoration: none;
-                color: var(--darkgray);
+                color: var(--white);
                 display: block;
                 font-size: var(--p);
                 line-height: 2.5rem;
@@ -46,7 +45,7 @@
         .footer-contact {
 
             h4 {
-                color: var(--darkgray);
+                color: var(--white);
                 font-weight: 800;
                 font-size: var(--h2);
                 text-transform: uppercase;
@@ -58,7 +57,7 @@
     
             p {
                 text-decoration: none;
-                color: var(--darkgray);
+                color: var(--white);
                 display: block;
                 font-size: var(--p);
                 cursor: pointer;
@@ -77,16 +76,15 @@
         .foot {
             display: flex;
             justify-content: space-around;
-            background-color: var(--lightgray);
             padding: 1rem 1rem;
 
             p {
-                color: var(--darkgray);
+                color: var(--white);
                 font-size: var(--p);
             }
 
             a {
-                color: var(--darkgray);
+                color: var(--white);
                 font-weight: 800;
                 font-size: var(--a);
                 text-decoration: none;
@@ -97,7 +95,7 @@
                 a {
                     margin: 0 1rem;
                     font-size: var(--a);
-                    color: var(--darkgray);
+                    color: var(--white);
                     transition: 0.5s ease;
                 }
 
