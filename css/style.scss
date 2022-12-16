@@ -20,11 +20,8 @@
 }
 
 .slider_container {
-    height: 88.8vh;
-    padding: 15rem 10%;
-    background-image: url(/img/cover1.jpg);
-    background-position: center;
-    background-size: cover;
+    height: 100vh;
+    padding: 0 10%;
 
     .container {
         text-align: center;
@@ -57,13 +54,14 @@
             text-align: center;
 
             .swiper-slide {
-                padding: 1rem 1rem;
-                justify-content: center;
-                align-items: center;
+                display: grid;
+                place-items: center;
+                height: 100vh;
                 overflow: hidden;
 
                 h3 {
                     font-size: var(--h2);
+                    background-color: rgba(0, 0, 0, 0.481);
                 }
 
                 a {
@@ -85,7 +83,7 @@
 }
 
 .details {
-    padding: 2rem 10%;
+    padding: 5rem 10%;
 
     .details-desc {
         text-align: center;
