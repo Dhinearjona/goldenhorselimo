@@ -20,7 +20,7 @@
 }
 
 .slider_container {
-    height: 100vh;
+    height: 100%;
     padding: 0 10%;
 
     .container {
@@ -55,8 +55,8 @@
 
             .swiper-slide {
                 display: grid;
-                place-items: center;
-                height: 100vh;
+                place-content: center;
+                height: 129vh;
                 overflow: hidden;
 
                 h3 {
