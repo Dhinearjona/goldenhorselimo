@@ -44,8 +44,11 @@
   text-align: center;
 }
 .slider_container .swiper .swiper-wrapper .swiper-slide {
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
   height: 129vh;
   overflow: hidden;
 }
