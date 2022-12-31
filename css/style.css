@@ -2,6 +2,7 @@
 @import "./footer.css";
 .logos {
   text-align: center;
+  padding-top: 5rem;
 }
 .logos img {
   width: 25rem;
