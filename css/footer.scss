@@ -1,0 +1,122 @@
+
+.footer {
+    padding: 5rem 10%;
+    display: flex;
+    justify-content: space-around;
+
+    .footer-about {
+        width: 25rem;
+
+        img {
+            width: 15rem;
+        }
+
+        p {
+            font-size: var(--normal-font-size);
+        }
+    }
+    
+    .footer-links {
+        margin-right: 2rem;
+        line-height: 2;
+
+        h3 {
+            font-size: var(--h3-font-size);
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+
+        a {
+            font-size: var(--normal-font-size);
+            text-decoration: none;
+            color: var(--white);
+
+            &:hover {
+                color: var(--gold);
+            }
+        }
+    }
+
+    .footer-contact {
+        margin-right: 2rem;
+        line-height: 2;
+        
+        h3 {
+            font-size: var(--h3-font-size);
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+
+        a {
+            font-size: var(--normal-font-size);
+            text-decoration: none;
+            color: var(--white);
+        }
+    }
+}
+
+.foot {
+    padding: 2rem 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .footer-copyright {
+
+        a {
+            font-weight: 700;
+            color: var(--gold);
+        }
+    }
+
+    .footer-social {
+
+        a {
+            padding: 0 1rem;
+            font-size: var(--normal-font-size);
+            color: var(--white);
+
+            &:hover {
+                color: var(--gold);
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .footer {
+        padding: 2rem 1rem;
+        flex-direction: column;
+
+        .footer-about {
+            margin-bottom: 1rem;
+            width: 100%;
+
+            p {
+                margin-right: 2rem;
+            }
+        }
+        
+        .footer-links {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .foot {
+        padding: 1rem 2rem;
+        flex-direction: column;
+        line-height: 2;
+        text-align: center;
+
+        .footer-copyright {
+            margin-bottom: 1rem;
+        }
+
+        .footer-social {
+
+            a {
+                font-size: var(--h1-font-size);
+            }
+        }
+    }
+}

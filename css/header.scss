@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:target {
+    scroll-margin-top: 81px;
+}
+
+body {
+    max-width: 1980px;
+    width: 100%;
+    color: var(--white);
+}
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --gold: #FFCC66;
+
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --biggest-font-size: 3.5rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 0.875rem;
+        --smaller-font-size: 0.813rem;
+    }
+}
+
+html {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    height: 100%;
+    background: var(--black);
+    max-width: 1980px;
+    width: 100%;
+}
+
+a {
+    color: var(--white);
+}
+
+.header {
+    background-color: var(--black);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    justify-content: space-around;
+    max-width: 1980px;
+    width: 100%;
+    z-index: 3;
+
+    .logo {
+        width: 10rem;
+        float: left;
+        display: flex;
+        align-items: center;
+        padding: .5rem .5rem;
+    }
+
+    ul {
+        overflow: hidden;
+        background-color: var(--black);
+    }
+
+    li {
+
+        a {
+            display: block;
+            padding: 20px 20px;
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: all .45s ease;
+
+            &:hover {
+                color: var(--gold);
+            }
+        }
+    }
+
+    .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+
+        .contact-btn {
+            background: var(--gold);
+            color: var(--black);
+            transition: 0.2s ease-out;
+            border-radius: 10px;
+
+            &:hover {
+                background: transparent;
+                border: 1px solid var(--gold);
+                color: var(--white);
+            }
+        }
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        float: right;
+        top: 2.5rem;
+        right: 1rem;
+        background: var(--white);
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+
+    .nav-icon {
+        background: var(--black);
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+
+        &:before {
+            background: var(--black);
+            content: '';
+            display: block;
+            height: 2px;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+            top: 5px;
+        }
+
+        &:after {
+            background: var(--black);
+            content: '';
+            display: block;
+            height: 2px;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+            top: -5px;
+        }
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .menu-btn:checked ~ .menu {
+        max-height: 70vh;
+    }
+
+    .menu-btn:checked ~ .menu-icon .nav-icon {
+        background: transparent;
+    }
+
+    .menu-btn:checked ~ .menu-icon .nav-icon:before {
+        transform: rotate(-45deg);
+        top:0;
+    }
+
+    .menu-btn:checked ~ .menu-icon .nav-icon:after {
+        transform: rotate(45deg);
+        top:0;
+    }
+}
+
+@media (min-width: 48em) {
+    .header {
+        height: 5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .logo {
+            width: 8rem;
+        }
+
+        li {
+            float: left;
+        }
+
+        a {
+            padding: 0;
+        }
+
+        .menu {
+            clear: none;
+            float: right;
+            margin: 0;
+            max-height: none;
+        }
+
+        .menu-icon {
+            display: none;
+        }
+    }
+}

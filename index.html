@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <title>Home - Golden Horse Limo</title>
+</head>
+<body style="background: var(--black); color: var(--white);">
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" class="logo"></a>
+        </div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/carousel1.png" />
+                <div class="swiper-text">
+                    <p>"Let us take the wheel so that you can indulge in the moments that matter. We are here to serve you."</p>
+                    <a href="#reserve"><button class="quote-btn">Get a Quote</button></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/carousel2.png" />
+                <div class="swiper-text">
+                    <p>"Let us take the wheel so that you can indulge in the moments that matter. We are here to serve you."</p>
+                    <a href="#reserve"><button class="quote-btn">Get a Quote</button></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/carousel3.png" />
+                <div class="swiper-text">
+                    <p>"Let us take the wheel so that you can indulge in the moments that matter. We are here to serve you."</p>
+                    <a href="#reserve"><button class="quote-btn">Get a Quote</button></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/carousel4.png" />
+                <div class="swiper-text">
+                    <p>"Let us take the wheel so that you can indulge in the moments that matter. We are here to serve you."</p>
+                    <a href="#reserve"><button class="quote-btn">Get a Quote</button></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/carousel5.png" />
+                <div class="swiper-text">
+                    <p>"Let us take the wheel so that you can indulge in the moments that matter. We are here to serve you."</p>
+                    <a href="#reserve"><button class="quote-btn">Get a Quote</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reserve" id="reserve">
+        <div class="reserve-desc">
+            <img src="img/logo.png" />
+            <h3>We are here to take your reservation, anytime</h3>
+            <h1>(980) 748 -5997</h1>
+            <p>Call us and one of our customer service reps will answer any questions you may have, or simply book with our online form below.</p>
+        </div>
+        <div class="reserve-form">
+            <form action="https://formspree.io/f/moqzvepp" method="POST">
+                <h2>Instant Online Quote</h2>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="form-control" name="fname" placeholder="First Name*">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="form-control" name="lname" placeholder="Last Name*">
+                </div>
+                <select class="form-select" id="form-select" name="servicetype">
+                    <option value="">--Please choose an Service Type--</option>
+                    <option value="From Airport">From Aiport</option>
+                    <option value="To Airport">To Airport</option>
+                    <option value="Point-to-Point">Point-to-Point</option>
+                    <option value="Hourly/As Directed">Hourly/As Directed</option>
+                </select>
+                <select class="form-select" id="form-select" name="vehicletype">
+                    <option value="">--Please choose a Vehicle Type--</option>
+                    <option value="SUV-Sedan">SUV - Sedan</option>
+                </select>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="form-control" name="location" placeholder="Pick up Location*">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="form-control" name="destination" placeholder="Destination*">
+                </div>
+                <input type="date"></input>
+                <select class="form-select" id="form-select" name="passengers">
+                    <option value="">--Passengers*--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select>
+                <select class="form-select" id="form-control" name="time">
+                    <option value="">--Pick up Time*--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="form-control" name="phone" placeholder="Phone*">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="form-control" name="email" placeholder="Email Address*">
+                </div>
+                <button class="submit" id="submit" name="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="experience">
+        <div class="expi-img">
+            <img src="img/car1.jpeg" />
+        </div>
+        <div class="expi-desc">
+            <h2>Experience Golden Horse Luxury</h2>
+            <p>Whether you're traveling for Business or taking off work to celebrate special occasions in town or out of town we are here to make your experience special with variety of luxury vehicles and professional drivers</p>
+        </div>
+    </div>
+
+    <div class="services">
+        <div class="services-desc">
+            <h1>Our Services</h1>
+        </div>
+        <div class="services-card">
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="img/img7.png" />
+                        <h3>Corporate Travel</h3>
+                        <a href="#reserve"><button class="book">Book Now</button></a>
+                    </div>
+                    <div class="card">
+                        <img src="img/img8.png" />
+                        <h3>Airport Transfer</h3>
+                        <a href="#reserve"><button class="book">Book Now</button></a>
+                    </div>
+                    <div class="card">
+                        <img src="img/img9.png" />
+                        <h3>Meetings and Event</h3>
+                        <a href="#reserve"><button class="book">Book Now</button></a>
+                    </div>
+                    <div class="card">
+                        <img src="img/img10.png" />
+                        <h3>Wedding Transportation</h3>
+                        <a href="#reserve"><button class="book">Book Now</button></a>
+                    </div>
+                    <div class="card">
+                        <img src="img/img11.png" />
+                        <h3>Local</h3>
+                        <a href="#reserve"><button class="book">Book Now</button></a>
+                    </div>
+                </div>
+                <div class="learn-btn">
+                    <a href="services.html"><button class="learn">More Services</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-about">
+            <img src="img/logo.png" />
+            <p>"Let us take the wheel so that you can indulge in the moments that matter. We are here to serve you."</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <hr>
+            <a href="index.html">Home</a><br>
+            <a href="services.html">Services</a><br>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <hr>
+            <a href="tel:(908) 7485997">(908) 7485997 | (704) 8910213</a><br>
+            <a href="mailto:goldenhorseride@gmail.com">goldenhorseride@gmail.com</a><br>
+            <a href="https://tinyurl.com/mrx9je63" target="_blank">2221 Verde Creek Rd, Charlotte Nc 28214</a>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="footer-copyright">
+            <p>© Copyright 2023 Golden Horse Limo by <a href="https://www.facebook.com/Dhinedevs" target="_blank">Frank Devs</a></p>
+        </div>
+        <div class="footer-social">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+
+        var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+    </script>
+</body>
+</html>

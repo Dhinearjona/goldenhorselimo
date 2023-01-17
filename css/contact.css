@@ -1,0 +1,81 @@
+@import url("./header.css");
+@import url("./footer.css");
+.contact {
+  padding: 10rem 10%;
+}
+.contact .contact-title {
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.contact .contact-title h1 {
+  font-size: var(--h1-font-size);
+  color: var(--gold);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.contact .contact-forms {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact .contact-forms .contact-form {
+  width: 100%;
+  border: 1px solid var(--gold);
+  padding: 2rem;
+}
+.contact .contact-forms .contact-form form {
+  line-height: 2.5;
+}
+.contact .contact-forms .contact-form form h2 {
+  font-size: var(--h2-font-size);
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+}
+.contact .contact-forms .contact-form form input {
+  width: 100%;
+  padding: 0.5rem;
+}
+.contact .contact-forms .contact-form form button {
+  padding: 0.5rem 3rem;
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--white);
+  transition: all 0.45s ease;
+}
+.contact .contact-forms .contact-form form button:hover {
+  background: var(--gold);
+  color: var(--black);
+}
+.contact .contact-forms .contact-form form textarea {
+  width: 100%;
+  height: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.contact .contact-forms .contact-maps iframe {
+  width: 45rem;
+  height: 40rem;
+  margin-left: 1rem;
+}
+
+@media (max-width: 800px) {
+  .contact {
+    padding: 10rem 2rem;
+  }
+  .contact .contact-forms {
+    flex-direction: column;
+  }
+  .contact .contact-forms .contact-form {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .contact .contact-forms .contact-form textarea {
+    width: 100%;
+  }
+  .contact .contact-forms .contact-maps iframe {
+    width: 100%;
+    height: 25rem;
+  }
+}
