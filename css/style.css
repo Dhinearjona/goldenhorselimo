@@ -62,10 +62,11 @@
   text-transform: uppercase;
   font-weight: 700;
 }
-.reserve .reserve-desc h1 {
+.reserve .reserve-desc a {
   font-size: var(--h1-font-size);
   color: var(--gold);
   font-weight: 700;
+  text-decoration: none;
 }
 .reserve .reserve-form {
   border: 1px solid var(--gold);
